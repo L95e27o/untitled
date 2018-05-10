@@ -31,3 +31,4 @@ if __name__ == '__main__':
     u = re.findall(r'(http|https://.*?)/.*?', url)
     home_url = u[0] if u else url
     print(home_url)
+    print 'jiushini'
