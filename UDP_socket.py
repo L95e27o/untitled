@@ -22,5 +22,5 @@ while True:
         print ('recevied from %s:%s' % addr)
     for n in user:
         if n[0] != data[0]:
-            s.sendto(bytes('>>>' + data[0] + ':' + data[1], encoding='utf-8'), n[1])
+            s.sendto(bytes('>>>' + data[0] + ':' + data[1]), n[1])
 

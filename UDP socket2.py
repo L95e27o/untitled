@@ -24,6 +24,6 @@ s.sendto(bytes(name + ':'+'online'), (ip, 9000))
 t = threading.Thread(target=udplink, args=(s, (ip, 9000)))
 t.start()
 while True:
-    data = input()
+    data = raw_input()
     s.sendto(bytes(name + ':' + data), (ip, 9000))
 s.close()
